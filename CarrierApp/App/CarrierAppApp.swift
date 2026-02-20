@@ -11,7 +11,7 @@ import SwiftUI
 struct CarrierAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
