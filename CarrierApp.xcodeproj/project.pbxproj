@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E72698152F4759310022425C /* CarrierAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72698142F4759310022425C /* CarrierAppApp.swift */; };
-		E72698172F4759310022425C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72698162F4759310022425C /* ContentView.swift */; };
 		E72698192F4759350022425C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72698182F4759350022425C /* Assets.xcassets */; };
 		E726981C2F4759350022425C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E726981B2F4759350022425C /* Preview Assets.xcassets */; };
 		E7F55E122F47665300E300B2 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E112F47665300E300B2 /* AuthResponse.swift */; };
@@ -16,12 +15,23 @@
 		E7F55E162F47680400E300B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E152F47680400E300B2 /* LoginView.swift */; };
 		E7F55E182F48A2A800E300B2 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E172F48A2A800E300B2 /* AuthServiceProtocol.swift */; };
 		E7F55E1A2F48A2C900E300B2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E192F48A2C900E300B2 /* AuthService.swift */; };
+		E7F55E1D2F51D4D800E300B2 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E1C2F51D4D800E300B2 /* TokenManager.swift */; };
+		E7F55E1F2F51D52300E300B2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E1E2F51D52300E300B2 /* AppState.swift */; };
+		E7F55E222F51D81D00E300B2 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E212F51D81D00E300B2 /* DashboardView.swift */; };
+		E7F55E242F51D83D00E300B2 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E232F51D83D00E300B2 /* DashboardViewModel.swift */; };
+		E7F55E272F51D8C500E300B2 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E262F51D8C500E300B2 /* Shipment.swift */; };
+		E7F55E2A2F51D90B00E300B2 /* DashboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E292F51D90B00E300B2 /* DashboardHeaderView.swift */; };
+		E7F55E2C2F51D92C00E300B2 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E2B2F51D92C00E300B2 /* StatsCardView.swift */; };
+		E7F55E2E2F51D95500E300B2 /* ShipmentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E2D2F51D95500E300B2 /* ShipmentRowView.swift */; };
+		E7F55E302F51DB3400E300B2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E2F2F51DB3400E300B2 /* MainTabView.swift */; };
+		E7F55E332F51ED4A00E300B2 /* ShipmentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E322F51ED4A00E300B2 /* ShipmentsViewModel.swift */; };
+		E7F55E352F51ED6600E300B2 /* ShipmentRowDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E342F51ED6600E300B2 /* ShipmentRowDetailedView.swift */; };
+		E7F55E372F51ED8F00E300B2 /* ShipmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F55E362F51ED8F00E300B2 /* ShipmentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E72698112F4759310022425C /* CarrierApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrierApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72698142F4759310022425C /* CarrierAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierAppApp.swift; sourceTree = "<group>"; };
-		E72698162F4759310022425C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E72698182F4759350022425C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E726981B2F4759350022425C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7F55E112F47665300E300B2 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
@@ -29,6 +39,18 @@
 		E7F55E152F47680400E300B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E7F55E172F48A2A800E300B2 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		E7F55E192F48A2C900E300B2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E7F55E1C2F51D4D800E300B2 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		E7F55E1E2F51D52300E300B2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E7F55E212F51D81D00E300B2 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E7F55E232F51D83D00E300B2 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		E7F55E262F51D8C500E300B2 /* Shipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
+		E7F55E292F51D90B00E300B2 /* DashboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHeaderView.swift; sourceTree = "<group>"; };
+		E7F55E2B2F51D92C00E300B2 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
+		E7F55E2D2F51D95500E300B2 /* ShipmentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentRowView.swift; sourceTree = "<group>"; };
+		E7F55E2F2F51DB3400E300B2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E7F55E322F51ED4A00E300B2 /* ShipmentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentsViewModel.swift; sourceTree = "<group>"; };
+		E7F55E342F51ED6600E300B2 /* ShipmentRowDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentRowDetailedView.swift; sourceTree = "<group>"; };
+		E7F55E362F51ED8F00E300B2 /* ShipmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				E7F55E0F2F4765ED00E300B2 /* Features */,
-				E72698162F4759310022425C /* ContentView.swift */,
 				E7F55E0E2F47650700E300B2 /* App */,
 				E72698182F4759350022425C /* Assets.xcassets */,
 				E726981A2F4759350022425C /* Preview Content */,
@@ -81,7 +102,9 @@
 		E7F55E0E2F47650700E300B2 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E7F55E1E2F51D52300E300B2 /* AppState.swift */,
 				E72698142F4759310022425C /* CarrierAppApp.swift */,
+				E7F55E2F2F51DB3400E300B2 /* MainTabView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -89,6 +112,8 @@
 		E7F55E0F2F4765ED00E300B2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E7F55E312F51ED1100E300B2 /* Packages */,
+				E7F55E202F51D67A00E300B2 /* Dashboard */,
 				E7F55E102F47660700E300B2 /* Auth */,
 			);
 			path = Features;
@@ -102,8 +127,48 @@
 				E7F55E152F47680400E300B2 /* LoginView.swift */,
 				E7F55E172F48A2A800E300B2 /* AuthServiceProtocol.swift */,
 				E7F55E192F48A2C900E300B2 /* AuthService.swift */,
+				E7F55E1C2F51D4D800E300B2 /* TokenManager.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E7F55E202F51D67A00E300B2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E7F55E282F51D8EC00E300B2 /* Components */,
+				E7F55E252F51D84D00E300B2 /* Models */,
+				E7F55E212F51D81D00E300B2 /* DashboardView.swift */,
+				E7F55E232F51D83D00E300B2 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E7F55E252F51D84D00E300B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7F55E262F51D8C500E300B2 /* Shipment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7F55E282F51D8EC00E300B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E7F55E292F51D90B00E300B2 /* DashboardHeaderView.swift */,
+				E7F55E2B2F51D92C00E300B2 /* StatsCardView.swift */,
+				E7F55E2D2F51D95500E300B2 /* ShipmentRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E7F55E312F51ED1100E300B2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E7F55E322F51ED4A00E300B2 /* ShipmentsViewModel.swift */,
+				E7F55E342F51ED6600E300B2 /* ShipmentRowDetailedView.swift */,
+				E7F55E362F51ED8F00E300B2 /* ShipmentsView.swift */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,12 +242,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F55E142F4767E500E300B2 /* LoginViewModel.swift in Sources */,
+				E7F55E1D2F51D4D800E300B2 /* TokenManager.swift in Sources */,
+				E7F55E372F51ED8F00E300B2 /* ShipmentsView.swift in Sources */,
+				E7F55E2C2F51D92C00E300B2 /* StatsCardView.swift in Sources */,
 				E7F55E182F48A2A800E300B2 /* AuthServiceProtocol.swift in Sources */,
-				E72698172F4759310022425C /* ContentView.swift in Sources */,
+				E7F55E1F2F51D52300E300B2 /* AppState.swift in Sources */,
+				E7F55E2E2F51D95500E300B2 /* ShipmentRowView.swift in Sources */,
+				E7F55E242F51D83D00E300B2 /* DashboardViewModel.swift in Sources */,
+				E7F55E272F51D8C500E300B2 /* Shipment.swift in Sources */,
+				E7F55E352F51ED6600E300B2 /* ShipmentRowDetailedView.swift in Sources */,
+				E7F55E2A2F51D90B00E300B2 /* DashboardHeaderView.swift in Sources */,
 				E7F55E122F47665300E300B2 /* AuthResponse.swift in Sources */,
+				E7F55E332F51ED4A00E300B2 /* ShipmentsViewModel.swift in Sources */,
 				E7F55E162F47680400E300B2 /* LoginView.swift in Sources */,
+				E7F55E222F51D81D00E300B2 /* DashboardView.swift in Sources */,
 				E72698152F4759310022425C /* CarrierAppApp.swift in Sources */,
 				E7F55E1A2F48A2C900E300B2 /* AuthService.swift in Sources */,
+				E7F55E302F51DB3400E300B2 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct CarrierAppApp: App {
+    
+    @StateObject private var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            Group {
+                if appState.isLoggedIn {
+                    MainTabView()
+                } else {
+                    LoginView()
+                }
+            }
+            .environmentObject(appState)
         }
     }
 }

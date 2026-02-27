@@ -10,6 +10,7 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @EnvironmentObject var appState: AppState
     @StateObject private var viewModel = LoginViewModel(authService: AuthService())
     @State private var showPassword = false
     @State private var showSuccessAlert = false
@@ -134,6 +135,10 @@ struct LoginView: View {
                         Button {
                             Task {
                                 await viewModel.login()
+                                
+                                if viewModel.isLoggedIn {
+                                    appState.isLoggedIn = true
+                                }
                             }
                         } label: {
                             if viewModel.isLoading {
@@ -220,16 +225,6 @@ struct LoginView: View {
                     .padding(.bottom, 40)
                 }
                 .padding(.horizontal, 24)
-            }
-        }
-        .alert("Success", isPresented: $showSuccessAlert) {
-            Button("OK", role: .cancel) { }
-        } message: {
-            Text("Successfully signed in 🎉")
-        }
-        .onChange(of: viewModel.isLoggedIn) { value in
-            if value {
-                showSuccessAlert = true
             }
         }
     }

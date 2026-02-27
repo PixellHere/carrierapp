@@ -33,6 +33,12 @@ final class LoginViewModel: ObservableObject {
                 password: password
             )
             
+            TokenManager.shared.saveTokens(
+                accessToken: response.accessToken,
+                refreshToken: response.refreshToken,
+                expiresIn: response.expiresIn
+            )
+            
             print("Access token:", response.accessToken)
             isLoggedIn = true
             
