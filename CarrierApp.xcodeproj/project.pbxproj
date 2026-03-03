@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E715480F2F5730720040A404 /* ShipmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715480E2F5730720040A404 /* ShipmentDetailView.swift */; };
 		E72698152F4759310022425C /* CarrierAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72698142F4759310022425C /* CarrierAppApp.swift */; };
 		E72698192F4759350022425C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72698182F4759350022425C /* Assets.xcassets */; };
 		E726981C2F4759350022425C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E726981B2F4759350022425C /* Preview Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E715480E2F5730720040A404 /* ShipmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentDetailView.swift; sourceTree = "<group>"; };
 		E72698112F4759310022425C /* CarrierApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrierApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72698142F4759310022425C /* CarrierAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierAppApp.swift; sourceTree = "<group>"; };
 		E72698182F4759350022425C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				E7F55E282F51D8EC00E300B2 /* Components */,
-				E7F55E252F51D84D00E300B2 /* Models */,
 				E7F55E212F51D81D00E300B2 /* DashboardView.swift */,
 				E7F55E232F51D83D00E300B2 /* DashboardViewModel.swift */,
 			);
@@ -167,6 +168,8 @@
 				E7F55E322F51ED4A00E300B2 /* ShipmentsViewModel.swift */,
 				E7F55E342F51ED6600E300B2 /* ShipmentRowDetailedView.swift */,
 				E7F55E362F51ED8F00E300B2 /* ShipmentsView.swift */,
+				E7F55E252F51D84D00E300B2 /* Models */,
+				E715480E2F5730720040A404 /* ShipmentDetailView.swift */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F55E142F4767E500E300B2 /* LoginViewModel.swift in Sources */,
+				E715480F2F5730720040A404 /* ShipmentDetailView.swift in Sources */,
 				E7F55E1D2F51D4D800E300B2 /* TokenManager.swift in Sources */,
 				E7F55E372F51ED8F00E300B2 /* ShipmentsView.swift in Sources */,
 				E7F55E2C2F51D92C00E300B2 /* StatsCardView.swift in Sources */,

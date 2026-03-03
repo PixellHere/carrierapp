@@ -8,11 +8,26 @@
 import Foundation
 import SwiftUI
 
-struct Shipment: Identifiable {
+struct Shipment: Identifiable, Hashable {
     let id: String
     let number: String
-    let subtitle: String
     let status: ShipmentStatus
+    
+    let senderInfo: ContactInfo
+    let recipientInfo: ContactInfo
+}
+
+struct ContactInfo: Hashable {
+    let firstName: String
+    let lastName: String
+    let email: String
+    let phoneNumber: String
+    let country: String
+    let city: String
+    let zipCode: String
+    let street: String
+    let house: String
+    let apartment: String
 }
 
 enum ShipmentStatus {

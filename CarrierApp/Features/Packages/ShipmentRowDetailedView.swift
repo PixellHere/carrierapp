@@ -22,7 +22,7 @@ struct ShipmentRowDetailedView: View {
                         .font(.subheadline.bold())
                         .foregroundColor(.blue)
                     
-                    Text(shipment.subtitle.uppercased())
+                    Text("\(shipment.recipientInfo.firstName) \(shipment.recipientInfo.lastName)")
                         .font(.caption)
                         .foregroundColor(.gray)
                 }
@@ -37,7 +37,6 @@ struct ShipmentRowDetailedView: View {
             .padding(.horizontal, 20)
             .padding(.vertical, 20)
             
-            // 🔵 Niebieska linia separatora
             Rectangle()
                 .fill(Color.blue.opacity(0.15))
                 .frame(height: 1)

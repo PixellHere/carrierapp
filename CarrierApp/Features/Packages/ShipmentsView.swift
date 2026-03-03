@@ -13,8 +13,18 @@ struct ShipmentsView: View {
     @StateObject private var viewModel = ShipmentsViewModel()
     
     var body: some View {
+        NavigationStack {
+            VStack(spacing: 0) {
+                content
+            }
+            .navigationDestination(for: Shipment.self) { shipment in
+                ShipmentDetailView(shipment: shipment)
+            }
+        }
+    }
+    
+    private var content: some View {
         VStack(spacing: 0) {
-            
             // HEADER
             HStack {
                 Text("My Packages")
@@ -62,7 +72,10 @@ struct ShipmentsView: View {
             ScrollView {
                 LazyVStack(spacing: 0) {
                     ForEach(viewModel.filteredShipments) { shipment in
-                        ShipmentRowView(shipment: shipment)
+                        NavigationLink(value: shipment) {
+                            ShipmentRowView(shipment: shipment)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
             }

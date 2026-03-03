@@ -25,7 +25,7 @@ struct ShipmentRowView: View {
                 Text(shipment.number)
                     .font(.headline)
                 
-                Text(shipment.subtitle)
+                Text("\(shipment.recipientInfo.firstName) \(shipment.recipientInfo.lastName)")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
