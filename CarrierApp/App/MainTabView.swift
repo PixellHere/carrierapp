@@ -26,12 +26,12 @@ struct MainTabView: View {
                     Label("Shipments", systemImage: "cube.box")
                 }
                 .tag(1)
-//
-//            MapView()
-//                .tabItem {
-//                    Label("Map", systemImage: "map")
-//                }
-//                .tag(2)
+
+            MapView()
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+                .tag(2)
 //
 //            ProfileView()
 //                .tabItem {
