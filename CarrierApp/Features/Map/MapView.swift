@@ -68,48 +68,46 @@ struct MapView: View {
             // MAP
             Map(coordinateRegion: $region, annotationItems: points) { point in
                 
-                MapAnnotation(coordinate: point.coordinate) {
+                MapAnnotation(coordinate: point.coordinate, anchorPoint: CGPoint(x: 0.5, y: 1.0)) {
                     
-                    VStack(spacing: 6) {
+                    VStack(spacing: 8) {
                         
                         // INFO BOX
-                        if selectedPoint?.id == point.id {
+                        VStack(alignment: .leading, spacing: 4) {
                             
-                            VStack(alignment: .leading, spacing: 4) {
-                                
-                                HStack {
-                                    Text(point.name).font(.caption.bold())
-                                            
-                                    Spacer()
-                                            
-                                    Button {withAnimation(.easeInOut) {
-                                                    selectedPoint = nil
-                                        }
-                                    } label: {
-                                        Image(systemName: "xmark.circle.fill")
-                                            .foregroundColor(.gray)
+                            HStack {
+                                Text(point.name).font(.caption.bold())
+                                Spacer()
+                                Button {
+                                    withAnimation(.easeInOut) {
+                                        selectedPoint = nil
                                     }
+                                } label: {
+                                    Image(systemName: "xmark.circle.fill")
+                                        .foregroundColor(.gray)
                                 }
-                                
-                                Text("ID: \(point.id)")
-                                    .font(.caption2)
-                                
-                                Text(point.street)
-                                    .font(.caption2)
-                                
-                                Text("Hours: \(point.openHours)")
-                                    .font(.caption2)
-                                
-                                HStack {
-                                    Text("Continue").font(.caption.bold()).foregroundColor(.blue).underline()
-                                }
-                                
                             }
-                            .padding(8)
-                            .background(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 4)
+                            
+                            Text("ID: \(point.id)")
+                                .font(.caption2)
+                            
+                            Text(point.street)
+                                .font(.caption2)
+                            
+                            Text("Hours: \(point.openHours)")
+                                .font(.caption2)
+                            
+                            HStack {
+                                Text("Continue").font(.caption.bold()).foregroundColor(.blue).underline()
+                            }
                         }
+                        .padding(8)
+                        .frame(width: 160)
+                        .background(.white)
+                        .cornerRadius(10)
+                        .shadow(radius: 4)
+                        .opacity(selectedPoint?.id == point.id ? 1.0 : 0.0)
+                        .disabled(selectedPoint?.id != point.id)
                         
                         // MARKER
                         Button {
@@ -118,7 +116,6 @@ struct MapView: View {
                                 region.center = point.coordinate
                             }
                         } label: {
-                            
                             Image(systemName: "shippingbox.fill")
                                 .font(.title2)
                                 .foregroundColor(.white)
